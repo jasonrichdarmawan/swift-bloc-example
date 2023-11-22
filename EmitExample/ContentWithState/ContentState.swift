@@ -9,8 +9,12 @@ import Foundation
 
 struct ContentState: ViewModelState {
     static func initial() -> ContentState {
-        return ContentState(onSubmitStatus: .initial)
+        return ContentState(
+            count: 0,
+            onSubmitStatus: .initial
+        )
     }
     
+    var count: Int
     var onSubmitStatus: OnSubmitStatus
 }

@@ -17,11 +17,12 @@ struct EmitExampleApp: App {
                         Text("Content")
                     }
                 
-                ContentWithStateView(viewModel: ContentWithStateViewModel(count: 0))
+                ContentWithStateView(viewModel: ContentWithStateViewModel())
                     .tabItem {
                         Text("ContentWithState")
                     }
             }
+            .preferredColorScheme(.light)
         }
     }
 }

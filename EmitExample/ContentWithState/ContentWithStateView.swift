@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentWithStateView: View {
+    @State var count: Int = 0
+    
     @ObservedObject var viewModel: ContentWithStateViewModel
     
     var body: some View {
@@ -22,45 +24,53 @@ struct ContentWithStateView: View {
                     Text("Submit")
                 }
                 .onAppear {
-                    print("\(self) \(#function) initial")
+                    print("\(type(of: self)) initial")
                 }
             case .loading:
                 ProgressView()
                     .onAppear {
-                        print("\(self) \(#function) loading")
+                        print("\(type(of: self)) loading")
                     }
             case .success:
                 Text("Success")
                     .onAppear {
-                        print("\(self) \(#function) Success")
+                        print("\(type(of: self)) Success")
                     }
             case .failure:
                 Text("Failure")
                     .onAppear {
-                        print("\(self) \(#function) Failure")
+                        print("\(type(of: self)) Failure")
                     }
             }
             
             HStack(spacing: 0) {
                 Button {
-                    viewModel.count -= 1
+                    viewModel.decrement()
                 } label: {
                     Image(systemName: "minus.circle")
                 }
-                Text("\(viewModel.count)")
+                Text("\(viewModel.state.count)")
+                    .onAppear {
+                        print("\(type(of: self)) \(viewModel.state.count)")
+                    }
                 Button {
-                    viewModel.count += 1
+                    viewModel.increment()
                 } label: {
                     Image(systemName: "plus.circle")
                 }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onReceive(viewModel.objectWillChange, perform: { _ in
+            print("\(type(of: self)) viewModel will change. count: \(count)")
+            count += 1
+        })
+
     }
 }
 
 #Preview {
     ContentWithStateView(
-        viewModel: ContentWithStateViewModel(count: 0)
+        viewModel: ContentWithStateViewModel()
     )
 }

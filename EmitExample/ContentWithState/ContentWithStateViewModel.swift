@@ -8,12 +8,7 @@
 import Foundation
 
 final class ContentWithStateViewModel: ViewModel<ContentState> {
-    @Published var count: Int
-    
-    init(
-        count: Int
-    ) {
-        self.count = count
+    override init() {
         super.init()
         print("\(self) \(#function)")
     }
@@ -37,12 +32,26 @@ final class ContentWithStateViewModel: ViewModel<ContentState> {
         
         result.fold { item in
             emit(state.with({
+                $0.count += 1
                 $0.onSubmitStatus = .success
             }))
         } errorTransform: { error in
             emit(state.with({
+                $0.count -= 1
                 $0.onSubmitStatus = .failure
             }))
         }
+    }
+    
+    func increment() {
+        emit(state.with({
+            $0.count += 1
+        }))
+    }
+    
+    func decrement() {
+        emit(state.with({
+            $0.count -= 1
+        }))
     }
 }

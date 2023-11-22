@@ -23,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961071A42B0E6DC4006ABBD5 /* Screenshot 2023-11-23 at 00.11.24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-11-23 at 00.11.24.png"; sourceTree = "<group>"; };
+		961071A52B0E6DDA006ABBD5 /* Screenshot 2023-11-23 at 00.11.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-11-23 at 00.11.48.png"; sourceTree = "<group>"; };
+		961071A62B0E6E04006ABBD5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96636EDD2B0D23BF001C9C35 /* EmitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitExampleApp.swift; sourceTree = "<group>"; };
 		96636EE22B0D23BF001C9C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,10 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961071A22B0E6D83006ABBD5 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				961071A52B0E6DDA006ABBD5 /* Screenshot 2023-11-23 at 00.11.48.png */,
+				961071A42B0E6DC4006ABBD5 /* Screenshot 2023-11-23 at 00.11.24.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		96636ED42B0D23BF001C9C35 = {
 			isa = PBXGroup;
 			children = (
-				96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */,
+				961071A62B0E6E04006ABBD5 /* README.md */,
+				961071A22B0E6D83006ABBD5 /* assets */,
 				96636EDF2B0D23BF001C9C35 /* EmitExample */,
 				96636EDE2B0D23BF001C9C35 /* Products */,
 			);
@@ -70,6 +83,7 @@
 		96636EDF2B0D23BF001C9C35 /* EmitExample */ = {
 			isa = PBXGroup;
 			children = (
+				96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */,
 				96E258F92B0E478500E1D9DA /* Core */,
 				96E258FC2B0E47AA00E1D9DA /* ContentWithState */,
 				96E258FB2B0E47A300E1D9DA /* Content */,

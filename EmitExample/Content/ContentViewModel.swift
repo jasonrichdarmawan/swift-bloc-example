@@ -36,10 +36,19 @@ final class ContentViewModel: ObservableObject {
         let result = await fetchContent()
         
         result.fold { success in
+            count += 1
             onSubmitStatus = .success
         } errorTransform: { failure in
+            count -= 1
             onSubmitStatus = .failure
         }
 
+    }
+}
+
+extension ContentViewModel: Equatable {
+    static func == (lhs: ContentViewModel, rhs: ContentViewModel) -> Bool {
+        return lhs.count == rhs.count &&
+               lhs.onSubmitStatus == rhs.onSubmitStatus
     }
 }

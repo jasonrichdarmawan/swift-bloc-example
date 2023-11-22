@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var count: Int = 0
+    
     @ObservedObject var viewModel: ContentViewModel
     
     var body: some View {
@@ -22,22 +24,22 @@ struct ContentView: View {
                     Text("Submit")
                 }
                 .onAppear {
-                    print("\(self) \(#function) initial")
+                    print("\(type(of: self)) initial")
                 }
             case .loading:
                 ProgressView()
                     .onAppear {
-                        print("\(self) \(#function) loading")
+                        print("\(type(of: self)) loading")
                     }
             case .success:
                 Text("Success")
                     .onAppear {
-                        print("\(self) \(#function) Success")
+                        print("\(type(of: self)) Success")
                     }
             case .failure:
                 Text("Failure")
                     .onAppear {
-                        print("\(self) \(#function) Failure")
+                        print("\(type(of: self)) Failure")
                     }
             }
             
@@ -48,6 +50,9 @@ struct ContentView: View {
                     Image(systemName: "minus.circle")
                 }
                 Text("\(viewModel.count)")
+                    .onAppear {
+                        print("\(type(of: self)) \(viewModel.count)")
+                    }
                 Button {
                     viewModel.count += 1
                 } label: {
@@ -56,6 +61,10 @@ struct ContentView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onReceive(viewModel.objectWillChange, perform: { _ in
+            print("\(type(of: self)) viewModel will change. count: \(count)")
+            count += 1
+        })
     }
 }
 
