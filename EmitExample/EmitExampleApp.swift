@@ -11,7 +11,17 @@ import SwiftUI
 struct EmitExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView(viewModel: ContentViewModel(count: 0))
+                    .tabItem {
+                        Text("Content")
+                    }
+                
+                ContentWithStateView(viewModel: ContentWithStateViewModel(count: 0))
+                    .tabItem {
+                        Text("ContentWithState")
+                    }
+            }
         }
     }
 }
