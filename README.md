@@ -52,3 +52,11 @@
    if we pass ViewModel to a constructor, it will lead to unexpected behavior such as:
    1. if we pass a ViewModel to a Sheet View, the ViewModel will not deinit when the sheet is dismissed.
    2. if we pass a ViewModel to a non Sheet View, the ViewModel will deinit. Concerning😂
+
+4. 1 component for 1 thing
+
+   the benefit:
+   1. easy to read View file.
+   2. (bonus) maybe, reusable component.
+
+   ![j](./assets/Screenshot%202023-11-23%20at%2022.12.54.png)
