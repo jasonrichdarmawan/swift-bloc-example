@@ -13,7 +13,17 @@ struct SheetView: View {
     @StateObject var viewModel: SheetViewModel
     
     init(params: SheetViewModelParams) {
-        self._viewModel = StateObject(wrappedValue: SheetViewModel.shared(params: params))
+        self._viewModel = StateObject(
+            wrappedValue: SheetViewModel.shared(params: params)
+        )
+    }
+    
+    @available(
+        *,
+         deprecated,
+         message: "Bug: ViewModel will not deinit when Sheet is dismissed. use .init(params:)")
+    init(viewModel: SheetViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {

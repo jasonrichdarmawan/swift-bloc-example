@@ -78,6 +78,13 @@ struct ContentWithoutStateView: View {
                 initialCount: 0,
                 initialViewType: .List
             )
+            
+            /**
+             - Bug: ViewModel will not deinit. Use .init(params:)
+             */
+//            let viewModel = SheetViewModel(params: params)
+//            SheetView(viewModel: viewModel)
+            
             SheetView(params: params)
         }
     }

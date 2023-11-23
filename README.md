@@ -32,7 +32,8 @@
 
    ![f](./assets/Screenshot%202023-11-23%20at%2021.13.58.png)
 
-   the goal: single source of truth for required parameter.
+   the benefit: 
+   1. single source of truth for required parameter.
 
    for example, `ContentWithoutStateViewModelParams` is used by:
    1. `ContentWithoutStateViewModel.init(params:)`
@@ -41,3 +42,13 @@
    ![g](./assets/Screenshot%202023-11-23%20at%2021.15.38.png)
 
    ![h](./assets/Screenshot%202023-11-23%20at%2021.17.25.png)
+
+3. never inject a ViewModel to a constructor. 
+
+   use the parameters, then initialize the ViewModel inside the constructor.
+
+   ![i](./assets/Screenshot%202023-11-23%20at%2022.04.22.png)
+
+   if we pass ViewModel to a constructor, it will lead to unexpected behavior such as:
+   1. if we pass a ViewModel to a Sheet View, the ViewModel will not deinit when the sheet is dismissed.
+   2. if we pass a ViewModel to a non Sheet View, the ViewModel will deinit. Concerning😂
