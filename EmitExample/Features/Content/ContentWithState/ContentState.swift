@@ -7,14 +7,26 @@
 
 import Foundation
 
-struct ContentState: ViewModelState {
+struct ContentState {
+    var count: Int
+    var onSubmitStatus: OnSubmitStatus
+    
+    init(
+        count: Int = 0,
+        onSubmitStatus: OnSubmitStatus = .initial
+    ) {
+        self.count = count
+        self.onSubmitStatus = onSubmitStatus
+    }
+}
+
+// - MARK: ViewModelState
+
+extension ContentState: ViewModelState {
     static func initial() -> ContentState {
-        return ContentState(
+        ContentState(
             count: 0,
             onSubmitStatus: .initial
         )
     }
-    
-    var count: Int
-    var onSubmitStatus: OnSubmitStatus
 }

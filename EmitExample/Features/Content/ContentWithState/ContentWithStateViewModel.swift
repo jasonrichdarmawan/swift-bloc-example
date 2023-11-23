@@ -8,8 +8,14 @@
 import Foundation
 
 final class ContentWithStateViewModel: ViewModel<ContentState> {
-    override init() {
+    init(initialState: ContentState) {
         super.init()
+        
+        emit(state.with({
+            $0.count = initialState.count
+            $0.onSubmitStatus = initialState.onSubmitStatus
+        }))
+        
         print("\(type(of: self)) \(#function)")
     }
     

@@ -34,14 +34,11 @@ struct HomeView: View {
             
             switch viewModel.selectedViewType {
             case .ContentWithoutState:
-                let params = ContentWithoutStateViewModelParams(
-                    initialCount: 0,
-                    initialOnSubmitStatus: .initial,
-                    initialIsSheetPresented: false
-                )
+                let params = ContentWithoutStateViewModelParams()
                 ContentWithoutStateView(params: params)
             case .ContentWithState:
-                ContentWithStateView()
+                let initialState = ContentState()
+                ContentWithStateView(initialState: initialState)
             }
         }
         .padding(.all, 16)

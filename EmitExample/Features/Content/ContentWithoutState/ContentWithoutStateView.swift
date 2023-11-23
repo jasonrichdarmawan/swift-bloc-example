@@ -84,10 +84,6 @@ struct ContentWithoutStateView: View {
 }
 
 #Preview {
-    let params = ContentWithoutStateViewModelParams(
-        initialCount: 0,
-        initialOnSubmitStatus: .initial,
-        initialIsSheetPresented: false
-    )
+    let params = ContentWithoutStateViewModelParams()
     return ContentWithoutStateView(params: params)
 }

@@ -18,7 +18,6 @@
 		96334EB22B0F5DB500FF5069 /* SheetNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB12B0F5DB500FF5069 /* SheetNewViewModel.swift */; };
 		96334EB42B0F604100FF5069 /* SheetNewViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB32B0F604100FF5069 /* SheetNewViewModelParams.swift */; };
 		96334EB72B0F612700FF5069 /* CountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB62B0F612700FF5069 /* CountComponent.swift */; };
-		96334EB92B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */; };
 		96334EBB2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */; };
 		96334EBF2B0F665A00FF5069 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EBE2B0F665A00FF5069 /* HomeView.swift */; };
 		96334EC12B0F669A00FF5069 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC02B0F669A00FF5069 /* HomeViewModel.swift */; };
@@ -29,6 +28,7 @@
 		96334ECB2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECA2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift */; };
 		96334ECD2B0F6FA500FF5069 /* SheetViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECC2B0F6FA500FF5069 /* SheetViewModel+Shared.swift */; };
 		96334ECF2B0F6FB600FF5069 /* HomeViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECE2B0F6FB600FF5069 /* HomeViewModel+Shared.swift */; };
+		96334ED62B0F9AD700FF5069 /* ContentWithStateViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ED52B0F9AD700FF5069 /* ContentWithStateViewModel+Shared.swift */; };
 		96636EE12B0D23BF001C9C35 /* EmitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */; };
 		96636EE32B0D23BF001C9C35 /* ContentWithoutStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */; };
 		96636EE52B0D23C3001C9C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96636EE42B0D23C3001C9C35 /* Assets.xcassets */; };
@@ -59,7 +59,6 @@
 		96334EB12B0F5DB500FF5069 /* SheetNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNewViewModel.swift; sourceTree = "<group>"; };
 		96334EB32B0F604100FF5069 /* SheetNewViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNewViewModelParams.swift; sourceTree = "<group>"; };
 		96334EB62B0F612700FF5069 /* CountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponent.swift; sourceTree = "<group>"; };
-		96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentWithoutStateViewModel+Equatable.swift"; sourceTree = "<group>"; };
 		96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithoutStateViewModelParams.swift; sourceTree = "<group>"; };
 		96334EBE2B0F665A00FF5069 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		96334EC02B0F669A00FF5069 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		96334ECA2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetListViewModel+Shared.swift"; sourceTree = "<group>"; };
 		96334ECC2B0F6FA500FF5069 /* SheetViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetViewModel+Shared.swift"; sourceTree = "<group>"; };
 		96334ECE2B0F6FB600FF5069 /* HomeViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Shared.swift"; sourceTree = "<group>"; };
+		96334ED52B0F9AD700FF5069 /* ContentWithStateViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentWithStateViewModel+Shared.swift"; sourceTree = "<group>"; };
 		96636EDD2B0D23BF001C9C35 /* EmitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitExampleApp.swift; sourceTree = "<group>"; };
 		96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithoutStateView.swift; sourceTree = "<group>"; };
@@ -254,7 +254,6 @@
 				96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */,
 				96E258E92B0E437100E1D9DA /* ContentWithoutStateViewModel.swift */,
 				96334EC62B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift */,
-				96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */,
 				96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */,
 			);
 			path = ContentWithoutState;
@@ -265,6 +264,7 @@
 			children = (
 				96E258ED2B0E43D700E1D9DA /* ContentState.swift */,
 				96E258EB2B0E438900E1D9DA /* ContentWithStateViewModel.swift */,
+				96334ED52B0F9AD700FF5069 /* ContentWithStateViewModel+Shared.swift */,
 				96E258E72B0E41FC00E1D9DA /* ContentWithStateView.swift */,
 			);
 			path = ContentWithState;
@@ -367,6 +367,7 @@
 				96334EA32B0F4CEE00FF5069 /* SheetListViewModel.swift in Sources */,
 				96E258F42B0E443D00E1D9DA /* ViewModel.swift in Sources */,
 				96334ECF2B0F6FB600FF5069 /* HomeViewModel+Shared.swift in Sources */,
+				96334ED62B0F9AD700FF5069 /* ContentWithStateViewModel+Shared.swift in Sources */,
 				96334EC52B0F66EB00FF5069 /* HomeViewModelParams.swift in Sources */,
 				96636EE32B0D23BF001C9C35 /* ContentWithoutStateView.swift in Sources */,
 				96E258E82B0E41FC00E1D9DA /* ContentWithStateView.swift in Sources */,
@@ -384,7 +385,6 @@
 				96334EA82B0F5AB100FF5069 /* SheetListView.swift in Sources */,
 				96334EC12B0F669A00FF5069 /* HomeViewModel.swift in Sources */,
 				96334ECB2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift in Sources */,
-				96334EB92B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift in Sources */,
 				96334EB42B0F604100FF5069 /* SheetNewViewModelParams.swift in Sources */,
 				96334ECD2B0F6FA500FF5069 /* SheetViewModel+Shared.swift in Sources */,
 				96E258EC2B0E438900E1D9DA /* ContentWithStateViewModel.swift in Sources */,

@@ -12,9 +12,11 @@ struct ContentWithStateView: View {
     
     @StateObject var viewModel: ContentWithStateViewModel
     
-    init() {
+    init(
+        initialState: ContentState
+    ) {
         self._viewModel = StateObject(
-            wrappedValue: ContentWithStateViewModel()
+            wrappedValue: ContentWithStateViewModel.shared(initialState: initialState)
         )
     }
     
@@ -85,5 +87,6 @@ struct ContentWithStateView: View {
 }
 
 #Preview {
-    ContentWithStateView()
+    let initialState = ContentState()
+    return ContentWithStateView(initialState: initialState)
 }
