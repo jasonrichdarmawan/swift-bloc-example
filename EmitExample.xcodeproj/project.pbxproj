@@ -7,12 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96334E9F2B0F487700FF5069 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334E9E2B0F487700FF5069 /* SheetView.swift */; };
+		96334EA12B0F488800FF5069 /* SheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EA02B0F488800FF5069 /* SheetViewModel.swift */; };
+		96334EA32B0F4CEE00FF5069 /* SheetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EA22B0F4CEE00FF5069 /* SheetListViewModel.swift */; };
+		96334EA52B0F591B00FF5069 /* SheetViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EA42B0F591B00FF5069 /* SheetViewModelParams.swift */; };
+		96334EA82B0F5AB100FF5069 /* SheetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EA72B0F5AB100FF5069 /* SheetListView.swift */; };
+		96334EAA2B0F5B7100FF5069 /* SheetViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EA92B0F5B7100FF5069 /* SheetViewType.swift */; };
+		96334EAC2B0F5C0D00FF5069 /* SheetListViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EAB2B0F5C0D00FF5069 /* SheetListViewModelParams.swift */; };
+		96334EAF2B0F5CE200FF5069 /* SheetNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EAE2B0F5CE200FF5069 /* SheetNewView.swift */; };
+		96334EB22B0F5DB500FF5069 /* SheetNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB12B0F5DB500FF5069 /* SheetNewViewModel.swift */; };
+		96334EB42B0F604100FF5069 /* SheetNewViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB32B0F604100FF5069 /* SheetNewViewModelParams.swift */; };
+		96334EB72B0F612700FF5069 /* CountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB62B0F612700FF5069 /* CountComponent.swift */; };
+		96334EB92B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */; };
+		96334EBB2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */; };
+		96334EBF2B0F665A00FF5069 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EBE2B0F665A00FF5069 /* HomeView.swift */; };
+		96334EC12B0F669A00FF5069 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC02B0F669A00FF5069 /* HomeViewModel.swift */; };
+		96334EC32B0F66B200FF5069 /* HomeViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC22B0F66B200FF5069 /* HomeViewType.swift */; };
+		96334EC52B0F66EB00FF5069 /* HomeViewModelParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC42B0F66EB00FF5069 /* HomeViewModelParams.swift */; };
+		96334EC72B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC62B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift */; };
+		96334EC92B0F6F2A00FF5069 /* SheetNewViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334EC82B0F6F2A00FF5069 /* SheetNewViewModel+Shared.swift */; };
+		96334ECB2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECA2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift */; };
+		96334ECD2B0F6FA500FF5069 /* SheetViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECC2B0F6FA500FF5069 /* SheetViewModel+Shared.swift */; };
+		96334ECF2B0F6FB600FF5069 /* HomeViewModel+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96334ECE2B0F6FB600FF5069 /* HomeViewModel+Shared.swift */; };
 		96636EE12B0D23BF001C9C35 /* EmitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */; };
-		96636EE32B0D23BF001C9C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96636EE22B0D23BF001C9C35 /* ContentView.swift */; };
+		96636EE32B0D23BF001C9C35 /* ContentWithoutStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */; };
 		96636EE52B0D23C3001C9C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96636EE42B0D23C3001C9C35 /* Assets.xcassets */; };
 		96636EE82B0D23C3001C9C35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96636EE72B0D23C3001C9C35 /* Preview Assets.xcassets */; };
 		96E258E82B0E41FC00E1D9DA /* ContentWithStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258E72B0E41FC00E1D9DA /* ContentWithStateView.swift */; };
-		96E258EA2B0E437100E1D9DA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258E92B0E437100E1D9DA /* ContentViewModel.swift */; };
+		96E258EA2B0E437100E1D9DA /* ContentWithoutStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258E92B0E437100E1D9DA /* ContentWithoutStateViewModel.swift */; };
 		96E258EC2B0E438900E1D9DA /* ContentWithStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258EB2B0E438900E1D9DA /* ContentWithStateViewModel.swift */; };
 		96E258EE2B0E43D700E1D9DA /* ContentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258ED2B0E43D700E1D9DA /* ContentState.swift */; };
 		96E258F02B0E441000E1D9DA /* OnSubmitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */; };
@@ -26,13 +48,35 @@
 		961071A42B0E6DC4006ABBD5 /* Screenshot 2023-11-23 at 00.11.24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-11-23 at 00.11.24.png"; sourceTree = "<group>"; };
 		961071A52B0E6DDA006ABBD5 /* Screenshot 2023-11-23 at 00.11.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-11-23 at 00.11.48.png"; sourceTree = "<group>"; };
 		961071A62B0E6E04006ABBD5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96334E9E2B0F487700FF5069 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		96334EA02B0F488800FF5069 /* SheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewModel.swift; sourceTree = "<group>"; };
+		96334EA22B0F4CEE00FF5069 /* SheetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListViewModel.swift; sourceTree = "<group>"; };
+		96334EA42B0F591B00FF5069 /* SheetViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewModelParams.swift; sourceTree = "<group>"; };
+		96334EA72B0F5AB100FF5069 /* SheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListView.swift; sourceTree = "<group>"; };
+		96334EA92B0F5B7100FF5069 /* SheetViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewType.swift; sourceTree = "<group>"; };
+		96334EAB2B0F5C0D00FF5069 /* SheetListViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListViewModelParams.swift; sourceTree = "<group>"; };
+		96334EAE2B0F5CE200FF5069 /* SheetNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNewView.swift; sourceTree = "<group>"; };
+		96334EB12B0F5DB500FF5069 /* SheetNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNewViewModel.swift; sourceTree = "<group>"; };
+		96334EB32B0F604100FF5069 /* SheetNewViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNewViewModelParams.swift; sourceTree = "<group>"; };
+		96334EB62B0F612700FF5069 /* CountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponent.swift; sourceTree = "<group>"; };
+		96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentWithoutStateViewModel+Equatable.swift"; sourceTree = "<group>"; };
+		96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithoutStateViewModelParams.swift; sourceTree = "<group>"; };
+		96334EBE2B0F665A00FF5069 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		96334EC02B0F669A00FF5069 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		96334EC22B0F66B200FF5069 /* HomeViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewType.swift; sourceTree = "<group>"; };
+		96334EC42B0F66EB00FF5069 /* HomeViewModelParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelParams.swift; sourceTree = "<group>"; };
+		96334EC62B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentWithoutStateViewModel+Shared.swift"; sourceTree = "<group>"; };
+		96334EC82B0F6F2A00FF5069 /* SheetNewViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetNewViewModel+Shared.swift"; sourceTree = "<group>"; };
+		96334ECA2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetListViewModel+Shared.swift"; sourceTree = "<group>"; };
+		96334ECC2B0F6FA500FF5069 /* SheetViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetViewModel+Shared.swift"; sourceTree = "<group>"; };
+		96334ECE2B0F6FB600FF5069 /* HomeViewModel+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Shared.swift"; sourceTree = "<group>"; };
 		96636EDD2B0D23BF001C9C35 /* EmitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitExampleApp.swift; sourceTree = "<group>"; };
-		96636EE22B0D23BF001C9C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithoutStateView.swift; sourceTree = "<group>"; };
 		96636EE42B0D23C3001C9C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96636EE72B0D23C3001C9C35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96E258E72B0E41FC00E1D9DA /* ContentWithStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithStateView.swift; sourceTree = "<group>"; };
-		96E258E92B0E437100E1D9DA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		96E258E92B0E437100E1D9DA /* ContentWithoutStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithoutStateViewModel.swift; sourceTree = "<group>"; };
 		96E258EB2B0E438900E1D9DA /* ContentWithStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWithStateViewModel.swift; sourceTree = "<group>"; };
 		96E258ED2B0E43D700E1D9DA /* ContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentState.swift; sourceTree = "<group>"; };
 		96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSubmitStatus.swift; sourceTree = "<group>"; };
@@ -62,6 +106,91 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
+		96334E9D2B0F486C00FF5069 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				96334EB02B0F5D7000FF5069 /* Home */,
+				96334EA62B0F5AA700FF5069 /* SheetList */,
+				96334EAD2B0F5CD400FF5069 /* SheetNew */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		96334EA62B0F5AA700FF5069 /* SheetList */ = {
+			isa = PBXGroup;
+			children = (
+				96334EAB2B0F5C0D00FF5069 /* SheetListViewModelParams.swift */,
+				96334EA22B0F4CEE00FF5069 /* SheetListViewModel.swift */,
+				96334ECA2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift */,
+				96334EA72B0F5AB100FF5069 /* SheetListView.swift */,
+			);
+			path = SheetList;
+			sourceTree = "<group>";
+		};
+		96334EAD2B0F5CD400FF5069 /* SheetNew */ = {
+			isa = PBXGroup;
+			children = (
+				96334EB32B0F604100FF5069 /* SheetNewViewModelParams.swift */,
+				96334EB12B0F5DB500FF5069 /* SheetNewViewModel.swift */,
+				96334EC82B0F6F2A00FF5069 /* SheetNewViewModel+Shared.swift */,
+				96334EAE2B0F5CE200FF5069 /* SheetNewView.swift */,
+			);
+			path = SheetNew;
+			sourceTree = "<group>";
+		};
+		96334EB02B0F5D7000FF5069 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96334EA92B0F5B7100FF5069 /* SheetViewType.swift */,
+				96334EA42B0F591B00FF5069 /* SheetViewModelParams.swift */,
+				96334EA02B0F488800FF5069 /* SheetViewModel.swift */,
+				96334ECC2B0F6FA500FF5069 /* SheetViewModel+Shared.swift */,
+				96334E9E2B0F487700FF5069 /* SheetView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		96334EB52B0F611F00FF5069 /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				96334EB62B0F612700FF5069 /* CountComponent.swift */,
+			);
+			path = Count;
+			sourceTree = "<group>";
+		};
+		96334EBC2B0F663D00FF5069 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */,
+				96E258FC2B0E47AA00E1D9DA /* ContentWithState */,
+				96E258FB2B0E47A300E1D9DA /* ContentWithoutState */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		96334EBD2B0F665000FF5069 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96334EC22B0F66B200FF5069 /* HomeViewType.swift */,
+				96334EC42B0F66EB00FF5069 /* HomeViewModelParams.swift */,
+				96334EC02B0F669A00FF5069 /* HomeViewModel.swift */,
+				96334ECE2B0F6FB600FF5069 /* HomeViewModel+Shared.swift */,
+				96334EBE2B0F665A00FF5069 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		96334ED02B0F705800FF5069 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				96334EBD2B0F665000FF5069 /* Home */,
+				96334EB52B0F611F00FF5069 /* Count */,
+				96334E9D2B0F486C00FF5069 /* Sheet */,
+				96334EBC2B0F663D00FF5069 /* Content */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		96636ED42B0D23BF001C9C35 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +212,8 @@
 		96636EDF2B0D23BF001C9C35 /* EmitExample */ = {
 			isa = PBXGroup;
 			children = (
-				96E258EF2B0E441000E1D9DA /* OnSubmitStatus.swift */,
+				96334ED02B0F705800FF5069 /* Features */,
 				96E258F92B0E478500E1D9DA /* Core */,
-				96E258FC2B0E47AA00E1D9DA /* ContentWithState */,
-				96E258FB2B0E47A300E1D9DA /* Content */,
 				96636EE02B0D23BF001C9C35 /* EmitExampleApp.swift */,
 				96636EE42B0D23C3001C9C35 /* Assets.xcassets */,
 				96636EE62B0D23C3001C9C35 /* Preview Content */,
@@ -121,13 +248,16 @@
 			path = BLoC;
 			sourceTree = "<group>";
 		};
-		96E258FB2B0E47A300E1D9DA /* Content */ = {
+		96E258FB2B0E47A300E1D9DA /* ContentWithoutState */ = {
 			isa = PBXGroup;
 			children = (
-				96E258E92B0E437100E1D9DA /* ContentViewModel.swift */,
-				96636EE22B0D23BF001C9C35 /* ContentView.swift */,
+				96334EBA2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift */,
+				96E258E92B0E437100E1D9DA /* ContentWithoutStateViewModel.swift */,
+				96334EC62B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift */,
+				96334EB82B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift */,
+				96636EE22B0D23BF001C9C35 /* ContentWithoutStateView.swift */,
 			);
-			path = Content;
+			path = ContentWithoutState;
 			sourceTree = "<group>";
 		};
 		96E258FC2B0E47AA00E1D9DA /* ContentWithState */ = {
@@ -226,17 +356,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96334EC92B0F6F2A00FF5069 /* SheetNewViewModel+Shared.swift in Sources */,
+				96334EC32B0F66B200FF5069 /* HomeViewType.swift in Sources */,
+				96334EAC2B0F5C0D00FF5069 /* SheetListViewModelParams.swift in Sources */,
+				96334EB72B0F612700FF5069 /* CountComponent.swift in Sources */,
+				96334EAF2B0F5CE200FF5069 /* SheetNewView.swift in Sources */,
+				96334EBF2B0F665A00FF5069 /* HomeView.swift in Sources */,
 				96E258F62B0E444A00E1D9DA /* ViewModelState.swift in Sources */,
-				96E258EA2B0E437100E1D9DA /* ContentViewModel.swift in Sources */,
+				96E258EA2B0E437100E1D9DA /* ContentWithoutStateViewModel.swift in Sources */,
+				96334EA32B0F4CEE00FF5069 /* SheetListViewModel.swift in Sources */,
 				96E258F42B0E443D00E1D9DA /* ViewModel.swift in Sources */,
-				96636EE32B0D23BF001C9C35 /* ContentView.swift in Sources */,
+				96334ECF2B0F6FB600FF5069 /* HomeViewModel+Shared.swift in Sources */,
+				96334EC52B0F66EB00FF5069 /* HomeViewModelParams.swift in Sources */,
+				96636EE32B0D23BF001C9C35 /* ContentWithoutStateView.swift in Sources */,
 				96E258E82B0E41FC00E1D9DA /* ContentWithStateView.swift in Sources */,
+				96334EA52B0F591B00FF5069 /* SheetViewModelParams.swift in Sources */,
+				96334EBB2B0F650400FF5069 /* ContentWithoutStateViewModelParams.swift in Sources */,
 				96E258F22B0E442C00E1D9DA /* Result+Fold.swift in Sources */,
 				96E258F02B0E441000E1D9DA /* OnSubmitStatus.swift in Sources */,
 				96636EE12B0D23BF001C9C35 /* EmitExampleApp.swift in Sources */,
 				96E258F82B0E478000E1D9DA /* Withable.swift in Sources */,
+				96334EC72B0F699300FF5069 /* ContentWithoutStateViewModel+Shared.swift in Sources */,
+				96334EB22B0F5DB500FF5069 /* SheetNewViewModel.swift in Sources */,
 				96E258EE2B0E43D700E1D9DA /* ContentState.swift in Sources */,
+				96334E9F2B0F487700FF5069 /* SheetView.swift in Sources */,
+				96334EA12B0F488800FF5069 /* SheetViewModel.swift in Sources */,
+				96334EA82B0F5AB100FF5069 /* SheetListView.swift in Sources */,
+				96334EC12B0F669A00FF5069 /* HomeViewModel.swift in Sources */,
+				96334ECB2B0F6F3A00FF5069 /* SheetListViewModel+Shared.swift in Sources */,
+				96334EB92B0F64D600FF5069 /* ContentWithoutStateViewModel+Equatable.swift in Sources */,
+				96334EB42B0F604100FF5069 /* SheetNewViewModelParams.swift in Sources */,
+				96334ECD2B0F6FA500FF5069 /* SheetViewModel+Shared.swift in Sources */,
 				96E258EC2B0E438900E1D9DA /* ContentWithStateViewModel.swift in Sources */,
+				96334EAA2B0F5B7100FF5069 /* SheetViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

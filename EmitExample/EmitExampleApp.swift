@@ -11,18 +11,9 @@ import SwiftUI
 struct EmitExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ContentView(viewModel: ContentViewModel(count: 0))
-                    .tabItem {
-                        Text("Content")
-                    }
-                
-                ContentWithStateView(viewModel: ContentWithStateViewModel())
-                    .tabItem {
-                        Text("ContentWithState")
-                    }
-            }
-            .preferredColorScheme(.light)
+            let params = HomeViewModelParams(initialSelectedViewType: .ContentWithoutState)
+            HomeView(params: params)
+                .preferredColorScheme(.light)
         }
     }
 }

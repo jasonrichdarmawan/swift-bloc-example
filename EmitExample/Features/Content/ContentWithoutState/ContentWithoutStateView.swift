@@ -7,13 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var count: Int = 0
+struct ContentWithoutStateView: View {
+    @State var renderCount: Int = 0
     
-    @ObservedObject var viewModel: ContentViewModel
+    @StateObject var viewModel: ContentWithoutStateViewModel
+    
+    init(params: ContentWithoutStateViewModelParams) {
+        self._viewModel = StateObject(
+            wrappedValue: ContentWithoutStateViewModel.shared(params: params)
+        )
+    }
     
     var body: some View {
         VStack(spacing: 8) {
+            Text("Content Without State")
+            
             switch viewModel.onSubmitStatus {
             case .initial:
                 Button {
@@ -43,33 +51,43 @@ struct ContentView: View {
                     }
             }
             
-            HStack(spacing: 0) {
-                Button {
+            CountComponent(
+                count: $viewModel.count,
+                onDecrement: {
                     viewModel.count -= 1
-                } label: {
-                    Image(systemName: "minus.circle")
-                }
-                Text("\(viewModel.count)")
-                    .onAppear {
-                        print("\(type(of: self)) \(viewModel.count)")
-                    }
-                Button {
+                },
+                onIncrement: {
                     viewModel.count += 1
-                } label: {
-                    Image(systemName: "plus.circle")
                 }
+            )
+            
+            Button {
+                viewModel.isSheetPresented = true
+            } label: {
+                Text("show the sheet")
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(.all, 16)
+        .border(.secondary)
         .onReceive(viewModel.objectWillChange, perform: { _ in
-            print("\(type(of: self)) viewModel will change. count: \(count)")
-            count += 1
+            renderCount += 1
+            print("\(type(of: self)) viewModel will change. count: \(renderCount)")
         })
+        .sheet(isPresented: $viewModel.isSheetPresented) {
+            let params = SheetViewModelParams(
+                initialCount: 0,
+                initialViewType: .List
+            )
+            SheetView(params: params)
+        }
     }
 }
 
 #Preview {
-    ContentView(
-        viewModel: ContentViewModel(count: 0)
+    let params = ContentWithoutStateViewModelParams(
+        initialCount: 0,
+        initialOnSubmitStatus: .initial,
+        initialIsSheetPresented: false
     )
+    return ContentWithoutStateView(params: params)
 }

@@ -10,11 +10,11 @@ import Foundation
 final class ContentWithStateViewModel: ViewModel<ContentState> {
     override init() {
         super.init()
-        print("\(self) \(#function)")
+        print("\(type(of: self)) \(#function)")
     }
     
     deinit {
-        print("\(self) \(#function)")
+        print("\(type(of: self)) \(#function)")
     }
     
     func fetchContent() async -> Result<Bool, Error> {

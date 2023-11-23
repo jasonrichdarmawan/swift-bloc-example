@@ -7,21 +7,21 @@
 
 import Foundation
 
-final class ContentViewModel: ObservableObject {
+final class ContentWithoutStateViewModel: ObservableObject {
     @Published var count: Int
     @Published var onSubmitStatus: OnSubmitStatus
     
-    init(
-        count: Int,
-        onSubmitStatus: OnSubmitStatus = .initial
-    ) {
-        self.count = count
-        self.onSubmitStatus = .initial
-        print("\(self) \(#function)")
+    @Published var isSheetPresented: Bool
+    
+    init(params: ContentWithoutStateViewModelParams) {
+        self.count = params.initialCount
+        self.onSubmitStatus = params.initialOnSubmitStatus
+        self.isSheetPresented = params.initialIsSheetPresented
+        print("\(type(of: self)) \(#function)")
     }
     
     deinit {
-        print("\(self) \(#function)")
+        print("\(type(of: self)) \(#function)")
     }
     
     func fetchContent() async -> Result<Bool, Error> {
@@ -43,12 +43,5 @@ final class ContentViewModel: ObservableObject {
             onSubmitStatus = .failure
         }
 
-    }
-}
-
-extension ContentViewModel: Equatable {
-    static func == (lhs: ContentViewModel, rhs: ContentViewModel) -> Bool {
-        return lhs.count == rhs.count &&
-               lhs.onSubmitStatus == rhs.onSubmitStatus
     }
 }
