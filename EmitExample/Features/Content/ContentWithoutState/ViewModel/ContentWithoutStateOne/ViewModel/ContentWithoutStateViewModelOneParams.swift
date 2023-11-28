@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContentWithoutStateViewModelParams {
+struct ContentWithoutStateViewModelOneParams: ContentWithoutStateViewModelParams {
     let initialCount: Int
     let initialOnSubmitStatus: OnSubmitStatus
     let initialIsSheetPresented: Bool

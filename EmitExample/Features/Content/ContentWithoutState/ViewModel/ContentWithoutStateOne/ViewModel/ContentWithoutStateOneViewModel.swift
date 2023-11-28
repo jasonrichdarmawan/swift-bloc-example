@@ -7,13 +7,13 @@
 
 import Foundation
 
-final class ContentWithoutStateViewModel: ObservableObject {
+final class ContentWithoutStateOneViewModel: ContentWithoutStateViewModel {
     @Published var count: Int
     @Published var onSubmitStatus: OnSubmitStatus
     
     @Published var isSheetPresented: Bool
     
-    init(params: ContentWithoutStateViewModelParams) {
+    init(params: ContentWithoutStateViewModelOneParams) {
         self.count = params.initialCount
         self.onSubmitStatus = params.initialOnSubmitStatus
         self.isSheetPresented = params.initialIsSheetPresented

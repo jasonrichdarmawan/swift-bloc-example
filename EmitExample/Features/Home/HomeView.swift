@@ -34,8 +34,8 @@ struct HomeView: View {
             
             switch viewModel.selectedViewType {
             case .ContentWithoutState:
-                let params = ContentWithoutStateViewModelParams()
-                ContentWithoutStateView(params: params)
+                let params = ContentWithoutStateViewModelOneParams()
+                ContentWithoutStateView<ContentWithoutStateOneViewModel>(params: params)
             case .ContentWithState:
                 let initialState = ContentState()
                 ContentWithStateView(initialState: initialState)

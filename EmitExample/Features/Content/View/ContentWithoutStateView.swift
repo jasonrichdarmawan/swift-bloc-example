@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentWithoutStateView: View {
+struct ContentWithoutStateView<T: ContentWithoutStateViewModel>: View {
     @State var renderCount: Int = 0
     
-    @StateObject var viewModel: ContentWithoutStateViewModel
+    @StateObject var viewModel: T
     
-    init(params: ContentWithoutStateViewModelParams) {
+    init(params: T.P) {
         self._viewModel = StateObject(
-            wrappedValue: ContentWithoutStateViewModel.shared(params: params)
+            wrappedValue: ContentWithoutStateOneViewModel.shared(params: params)
         )
     }
     
@@ -91,6 +91,6 @@ struct ContentWithoutStateView: View {
 }
 
 #Preview {
-    let params = ContentWithoutStateViewModelParams()
-    return ContentWithoutStateView(params: params)
+    let params = ContentWithoutStateViewModelOneParams()
+    return ContentWithoutStateView<ContentWithoutStateOneViewModel>(params: params)
 }
