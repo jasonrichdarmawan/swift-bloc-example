@@ -18,4 +18,6 @@ protocol ContentWithoutStateViewModel: ObservableObject {
     func onSubmit() async
     
     init(params: P)
+    
+    static func shared<T: ContentWithoutStateViewModel>(params: T.P) -> T
 }

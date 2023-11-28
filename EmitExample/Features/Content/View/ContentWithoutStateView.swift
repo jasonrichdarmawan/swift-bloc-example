@@ -14,7 +14,7 @@ struct ContentWithoutStateView<T: ContentWithoutStateViewModel>: View {
     
     init(params: T.P) {
         self._viewModel = StateObject(
-            wrappedValue: ContentWithoutStateOneViewModel.shared(params: params)
+            wrappedValue: T.shared(params: params)
         )
     }
     
